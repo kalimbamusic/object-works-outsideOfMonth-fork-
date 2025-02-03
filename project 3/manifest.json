@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Timesheet Helper",
+  "version": "1.0",
+  "description": "Helps automate timesheet entry",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "https://hrm-portal.malam-payroll.com/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
